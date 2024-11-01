@@ -10,8 +10,12 @@ r.shuffle(value)
 secret = value[0:4]
 print(secret)
 guess = input("enter 4 digit value: ")
-for i in range(10):
-    if secret == guess:
-        print(guess,"green")
-        print("good job")
-        exit(0)
+for l in range(10):
+    for i in range(0,3):
+        if guess[i] in secret[i]:
+            print("yellow", i)
+        if guess[i] == secret[i]:
+            print("green", i)
+        if guess[0,3] == secret[0,3]:
+            print(guess,"is right")
+            exit(0)
