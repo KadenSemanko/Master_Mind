@@ -7,15 +7,18 @@
 import random as r
 value = list("1234567890")
 r.shuffle(value)
-secret = value[0:4]
-print(secret)
-guess = input("enter 4 digit value: ")
-for l in range(10):
-    for i in range(0,3):
-        if guess[i] in secret[i]:
-            print("yellow", i)
+secret = value[:4]
+print("Secret code (for testing):", (secret))
+for _ in range(10):
+    guess = input("Enter a 4-digit code: ")
+
+    if guess == ''.join(secret):
+        print(guess, "is correct!")
+        break
+    for i in range(4):
         if guess[i] == secret[i]:
-            print("green", i)
-        if guess[0,3] == secret[0,3]:
-            print(guess,"is right")
-            exit(0)
+            print("green", i)  # Correct digit and position
+        elif guess[i] in secret:
+            print("yellow", i)  # Correct digit, wrong position
+    else:
+        print("Try again.")
