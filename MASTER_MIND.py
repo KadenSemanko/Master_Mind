@@ -8,17 +8,25 @@ import random as r
 value = list("1234567890")
 r.shuffle(value)
 secret = value[:4]
-print("Secret code (for testing):", (secret))
 for _ in range(10):
-    guess = input("Enter a 4-digit code: ")
+    guess = input("Enter a 4-digit number(not repeats(ex:1111 doesn't work)): ")
 
-    if guess == ''.join(secret):
-        print(guess, "is correct!")
+    if guess == "" .join(secret):
+        print(guess, "is correct!") #Game is finished you guessed the number
         break
+    green = 0
+    yellow = 0
+    black = 0
     for i in range(4):
         if guess[i] == secret[i]:
-            print("green", i)  # Correct digit and position
+            green += 1 # Correct digit and position
+            print("green")
         elif guess[i] in secret:
-            print("yellow", i)  # Correct digit, wrong position
-    else:
-        print("Try again.")
+            yellow += 1 # Correct digit, wrong position
+            print("yellow")
+        if guess[i] not in secret:
+            black += 1 #Wrong digit, not in number
+            print("black")
+    print("Black "* black + "Green " * green + "Yellow " * yellow )
+    if green == 0 and yellow == 0:
+        print("try again")
