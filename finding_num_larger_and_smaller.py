@@ -19,5 +19,5 @@ def top_two(a,b,c,d,e,f):
     return (stuff[-1] ,stuff[-2])
 
 largest = top_two(345,6457,2234,6578,2,340)
-biggest , third = top_two(345,6457,2234,6578,2,340)
-print(third)
+biggest , next_biggest = top_two(345,6457,2234,6578,2,340)
+print(next_biggest)
