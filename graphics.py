@@ -1,3 +1,6 @@
+#Kaden Semanko
+#11/26/24
+#graphics.py
 import turtle as tur
 tur.speed(100)
 tur.shapesize(2)
@@ -49,23 +52,25 @@ tur.left(80)
 tur.color("white")
 tur.forward(50)
 
-def hectogon():
+def hectogon(): #Function for the "circle" to make it easier to repeat
     for i in range(100):
-        tur.color("black")
+        tur.color("black") 
         tur.forward(1)
         tur.left(3.6)
-hectogon()
-tur.right(60)
+hectogon() # 1 of 3 circles
+
+tur.right(60) #spacing
 tur.color("white")
 tur.forward(20)
-hectogon()
+
+hectogon() # 2nd of 3 circles
+
 tur.right(60)
-tur.color("white")
+tur.color("white") #extra space so I don't run into the rest of the shapes
 tur.forward(20)
 tur.left(60)
 tur.forward(20)
-hectogon()
 
-
+hectogon() # final circle
 
 tur.done() #allows the final image to be seen
