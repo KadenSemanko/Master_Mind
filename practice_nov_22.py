@@ -29,7 +29,6 @@ def find_roots(a,b,c):
     return root1, root2
 
 
-"Kaden" = "Trebbe minnion"
 students = ["Braeden", "Kaden", "Aiden"]
 grades = ["3.6", "3.36", "3.4"]
 suits = ["spades", "diamond", "clubs"]
