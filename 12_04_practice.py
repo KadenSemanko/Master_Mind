@@ -8,22 +8,24 @@ window.set_color("red")
 window.draw_oval(0,0,300,300) #overall shape
 window.fill_oval(0,0,300,300,"sandybrown") #the color of face
 window.draw_oval(60,40,70,120)
-window.fill_oval(60,40,70,120,"white")
+window.fill_oval(60,40,70,120,"white")#the scalera of the eyes are tipically not orange
 window.draw_oval(175,40,70,120)
-window.fill_oval(175,40,70,120,"white")
+window.fill_oval(175,40,70,120,"white")#the scalera of the eyes are tipically not orange
 window.fill_oval(90,40,10,120)
 window.fill_oval(205,40,10,120)
 window.draw_line(0,0,26,65) #ears
 window.draw_line(0,0,65,27)
+window.fill_polygon(0,0,65,27,26,65,"orange")
 window.draw_line(300,0,274,65)
 window.draw_line(300,0,235,27)
+window.fill_polygon(300,0,274,65,235,27,"orange")
 window.draw_line(135,145,150,165) #nose and mouth
 window.draw_line(135,145,165,145)
 window.draw_line(165,145,150,165)
 window.draw_line(150,165,150,175)
 window.draw_line(150,175,165,185)
 window.draw_line(150,175,135,185)
-window.set_color("black") 
+window.set_color("black") #red whiskers look funny
 window.draw_line(45,235,10,225) #left side whistkers
 window.draw_line(45,245,8,245)
 window.draw_line(47,255,12,265)

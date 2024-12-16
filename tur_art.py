@@ -2,7 +2,7 @@
 #11/26/24
 #tur_art.py
 
-import random as r
+import random as r #import random
 import turtle #import turtle
 turtle.hideturtle()
 blue = turtle.Turtle() #created one of two turtles
@@ -22,10 +22,14 @@ def move_random(color): # you can alter color of shape
                 blue.color("black")  #makes a hectogon if a == 90 colored  black
                 blue.forward(1)
                 blue.left(3.6)
-#move_random("purple")
-#move_random("aquamarine")
+move_random("purple") #changes color
+move_random("aquamarine") #change color
 
-def cool_thing(color):
+<<<<<<< HEAD
+def cool_thing(color): #bat logo
+=======
+def cool_thing(color): #it's a batman logo that you can alter the color
+>>>>>>> e61ba90a15913b4d3854faf7ab44fce518e39deb
     red.color(color)
     red.forward(100)
     red.right(135)
@@ -48,12 +52,24 @@ def cool_thing(color):
     red.forward(10)
     red.left(90)
     red.forward(15)
-    red.right(180)
-    red.forward(8)
+    red.right(135)
     red.forward(10)
     red.left(90)
-    red.forward(8)
+    red.forward(10)
+    red.right(135)
+    red.forward(15)
+    red.left(90)
+    red.forward(10)
+    red.left(90)
+    red.forward(15)
+    red.hideturtle() #allows the image to be looked without blocking
 
+<<<<<<< HEAD
 cool_thing("red")
-#cool_thing("blue")
+cool_thing("blue")
 turtle.done()
+=======
+cool_thing("red")#change pen color red
+cool_thing("blue")#change pen color blue
+turtle.done()#allow the image to be seen without closing
+>>>>>>> e61ba90a15913b4d3854faf7ab44fce518e39deb
