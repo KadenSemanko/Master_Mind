@@ -26,7 +26,11 @@ move_random("purple") #changes color
 move_random("aquamarine") #change color
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 def cool_thing(color): #bat logo
+=======
+def cool_thing(color): #it's a batman logo that you can alter the color
+>>>>>>> e61ba90a15913b4d3854faf7ab44fce518e39deb
 =======
 def cool_thing(color): #it's a batman logo that you can alter the color
 >>>>>>> e61ba90a15913b4d3854faf7ab44fce518e39deb
@@ -65,9 +69,15 @@ def cool_thing(color): #it's a batman logo that you can alter the color
     red.hideturtle() #allows the image to be looked without blocking
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 cool_thing("red")
 cool_thing("blue")
 turtle.done()
+=======
+cool_thing("red")#change pen color red
+cool_thing("blue")#change pen color blue
+turtle.done()#allow the image to be seen without closing
+>>>>>>> e61ba90a15913b4d3854faf7ab44fce518e39deb
 =======
 cool_thing("red")#change pen color red
 cool_thing("blue")#change pen color blue
